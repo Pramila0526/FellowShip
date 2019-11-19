@@ -1,7 +1,12 @@
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Program to Multiply 2 Matrix.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.functional;
-
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
-
 
 public class MatrixMultiplication 
 {
@@ -34,7 +39,7 @@ public class MatrixMultiplication
 			
 			 
 		 }
-		System.out.println(Utility.MatrixMultiplication(rows,columns,arr1,arr2,result));
+		System.out.println(Utility.matrixMultiplication(rows,columns,arr1,arr2,result));
 		
 
 	}

@@ -1,5 +1,11 @@
-package com.bridgelabz.fellowshipprogramss.junit;
+/**
+ *  @author: Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Program to Calculate Monthly Payment.
+ * 
+ */
 
+package com.bridgelabz.fellowshipprogramss.junit;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
 public class MonthlyPayment {
@@ -8,12 +14,13 @@ public class MonthlyPayment {
 	{
 		
 		System.out.println("Enter Principle");
-		double Principle=Utility.DoubleInput();
+		double Principle=Utility.doubleInput();
 		System.out.println("Enter Years");
 		int Years=Utility.IntegerInput();
 		System.out.println("Enter Rate");
-		double Rate=Utility.DoubleInput();
-	System.out.println(Utility.monthlyPayment(Principle,Years,Rate));
+		double Rate=Utility.doubleInput();
+	    
+		System.out.println(Utility.monthlyPayment(Principle,Years,Rate));
 
 	}
 

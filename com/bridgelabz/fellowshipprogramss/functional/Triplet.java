@@ -1,5 +1,11 @@
-package com.bridgelabz.fellowshipprogramss.functional;
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: To get the target value from array by adding.
+ * 
+ */
 
+package com.bridgelabz.fellowshipprogramss.functional;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
 public class Triplet 
@@ -16,7 +22,7 @@ public class Triplet
 		}
 		System.out.println("enter your target");
 		int target=Utility.IntegerInput();
-		System.out.println(Utility.Triplet(n,a,target));
+		System.out.println(Utility.triplet(n,a,target));
 		
 	}
 

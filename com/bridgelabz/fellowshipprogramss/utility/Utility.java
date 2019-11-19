@@ -1,26 +1,38 @@
+ /**
+ * @author Pramila0526
+ *  Date   9/11/2019
+ *  Purpose: Putting Commonly used function in single file.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.utility;
 import java.util.*;
 
+import com.bridgelabz.fellowshipprogramss.datastructure.LinkedQueue;
+import com.bridgelabz.fellowshipprogramss.datastructure.LinkedStack;
+
+
+
 public class Utility 
-{
+   {
 	
 	static Scanner sc=new Scanner(System.in);
 	public static int IntegerInput()
 	{
 		return sc.nextInt();
 	}
-	public static double DoubleInput()
+	public static double doubleInput()
 	{
 		return sc.nextDouble();
 	}
-	public static String StringInput()
+	public static String stringInput()
 	{
 		return sc.nextLine();
 	}
 	
 	/*****Binary Search*****/
 	
-	public static int binarySearch(int n,int a[],int search)
+public static int binarySearch(int n,int a[],int search)
 	{
 		int start=0;
 		int end=n-1;
@@ -54,7 +66,7 @@ public class Utility
 	
 	/*****Bubble Sort*****/
 	
-	public static int bubbleSort(int n,int a[])
+public static int bubbleSort(int n,int a[])
 	{
 		int temp=0;
 		int i,j;
@@ -82,7 +94,7 @@ public class Utility
 	
 	/*****Insertion Sort*****/
 	
-	public static int insertionSort(int n,int a[])
+public static int insertionSort(int n,int a[])
 	{
 		int i,j;
 		int temp;
@@ -105,11 +117,11 @@ public class Utility
 			
 			}
 		return 0;
-		}
+	}
 	
 	/*****Anagram*****/
 	
-	public static String Anagram(String first,String second)
+public static String anagram(String first,String second)
 	{
 		String s="";
 		int i,j;
@@ -155,20 +167,19 @@ public class Utility
 				System.out.println("Length should be equal");
 			}
 		return s;
-	}
+ }
 	
 	/*****Prime In Range*****/
 	
-	public static String primeInRange(int limit)
+public static String primeInRange(int limit)
 	{
 		String s="";
 		
 
 		 boolean isPrime;
 		 int count=0;
-		 int rem, temp, reversed;
-		 
-			 for (int number = 1; number <= limit; number++)
+	       
+		 for (int number = 1; number <= limit; number++)
 			 {
 			 isPrime = true;
 				 
@@ -177,12 +188,13 @@ public class Utility
 				 if((number % i) == 0)
 				 isPrime = false;
 				 }
-					 if (isPrime)  
+				 
+			      if (isPrime)  
 					 {
 						 System.out.println(number);
 						 count++;
 					 }
-	}
+	          }
 		System.out.println();
 		System.out.println("Prime Count" +count);
 		return s;
@@ -258,6 +270,7 @@ public static String primePalindrome(int limit)
 	}
 
    /*****Prime Factor****/
+
 public static int primeFactor(int number) 
 {
 	
@@ -276,23 +289,19 @@ return number;
 
 	/*****Merge Sort*****/
 
-public static String mergeSort()
-	{
-     String s="";
-     
-     return s;
-	}
+
+
 
 	/*****Array2D*****/
 	
-public static int[][] Array2D(int row,int column,int[][] arr) 
+public static int[][] array2D(int row,int column,int[][] arr) 
 	{
        int i,j;
        for( i=0;i<row;i++)
 		 {
 			 for( j=0;j<column;j++)
 			 {
-				 arr[i][j]=Utility.IntegerInput();
+				 arr[i][j]=IntegerInput();
 			 }
 		 }
 		System.out.println("2D array");
@@ -313,8 +322,8 @@ public static int[][] Array2D(int row,int column,int[][] arr)
 	
 	/*****Matrix Multiplication*****/
 	
-public static String MatrixMultiplication(int rows,int columns,int arr1[][],int arr2[][],int result[][])
-{
+public static String matrixMultiplication(int rows,int columns,int arr1[][],int arr2[][],int result[][])
+ {
 	String s="";
 	int i;
 	
@@ -335,15 +344,13 @@ public static String MatrixMultiplication(int rows,int columns,int arr1[][],int 
 	 }
 	 System.out.println();
 	
-}
-	
-return s;
-	
+  }
+	return s;
 }
 
   /*****Triplet*****/
 
-	public static String Triplet(int n,int a[],int target)
+public static String triplet(int n,int a[],int target)
  {
 	String s="";
 	
@@ -364,11 +371,11 @@ return s;
 	 System.out.println("Not found");	
 
 	 return s;
-	}
+}
 
   /*****Distance*****/
 
-public static String Distance(int x1,int x2,int y1,int y2)
+public static String distance(int x1,int x2,int y1,int y2)
 {
 	String s="";
 	double a= Math.pow(y2-y1,2); //values of equation
@@ -380,7 +387,7 @@ public static String Distance(int x1,int x2,int y1,int y2)
 
 	/*****Quadratic*****/
 
-public static String Quadratic(double a,double b,double c)
+public static String quadratic(double a,double b,double c)
 {
 	String s="";
 	
@@ -394,7 +401,7 @@ public static String Quadratic(double a,double b,double c)
 
    /*****WindChill*****/
 
-public static String WindChill(double t,double v)
+public static String windChill(double t,double v)
 {
 	String s=" ";
 	
@@ -546,7 +553,8 @@ public static String decimalToBinary(int number)
 return s;
 }
 
-   /*****Replacing the String with the given Username*****/
+    /******Basic Core******/
+   /*****Replacing the String with the given User name*****/
 
 public static String uInput(String UserName, int n) 
 {
@@ -564,4 +572,358 @@ public static String uInput(String UserName, int n)
 	
 	return s;
 }
+
+   /*****Flip Coin*****/
+
+public static int flipCoin(int flips)
+{
+	int heads=0;
+	int tails=0;
+	int counter=1;
+	double randomnum=0.0;
+	while(counter<=flips)
+	{
+		randomnum=Math.random();
+		System.out.print(counter + "\t" + randomnum);
+		if(randomnum<0.5)
+		{
+		    heads++;
+		    System.out.println("\t heads");
+		}
+		else
+		{
+			tails++;
+		System.out.println("\t tails");
+		
+		}
+		counter++;
+	}
+	System.out.println();
+	System.out.println("\t Number of Heads:" +heads);
+	System.out.println("\t Number of Tails:" +tails);
+	return 0;
+  }
+
+  /*****Data Structure Methods*****/
+
+public static boolean prime(int number) 
+{
+	int count = 0;
+	for (int j = 2; j <= number / 2; j++) 
+	{
+		if (number % j == 0) {
+			
+			count++;
+			break;
+		}
+	}
+	if (count == 0) 
+	{
+		return true;
+	} else
+		return false;
+    }
+
+    /*****Prime Anagram 2D Array*****/
+
+public static void primeAnagram2DArray(int[] prime) {
+	boolean z;
+	int count = 0, countAna = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+
+			if (z && count == 0) {
+				countAna++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			countAna++;
+			count = 0;
+		}
+	}
+	int[] anagramTotal = new int[countAna];
+	int x = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+
+			if (z && count == 0) {
+				anagramTotal[x] = prime[j];
+				x++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			anagramTotal[x] = prime[i];
+			x++;
+			count = 0;
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] > anagramTotal[j + 1]) {
+				int temp = anagramTotal[j];
+				anagramTotal[j] = anagramTotal[j + 1];
+				anagramTotal[j + 1] = temp;
+			}
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] == anagramTotal[j + 1]) {
+				anagramTotal[j + 1] = -1;
+			}
+		}
+	}
+	int positive = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			positive++;
+		}
+	}
+	int[] ana = new int[positive + 1];
+	int zz = 1;
+	int yy = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			ana[yy] = anagramTotal[i];
+			yy++;
+		}
+	}
+
+	int[][] total = new int[10][100];
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 100; j++) {
+			total[i][j] = zz;
+			zz++;
+		}
+	}
+	int xx = 0;
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 100; j++) {
+			if (ana[xx] == total[i][j] && xx < ana.length) {
+				total[i][j] = ana[xx];
+				xx++;
+			} else {
+				total[i][j] = -1;
+			}
+		}
+	}
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 100; j++) {
+			if (total[i][j] != -1) {
+				System.out.print(total[i][j] + " ");
+			}
+		}
+		System.out.println();
+	}
 }
+
+/*****Prime Anagram Linked list Satck*****/
+
+public static void primeAnagramLinkedListStack(int[] prime) {
+	boolean z;
+	int count = 0, countAna = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+
+			if (z && count == 0) {
+				countAna++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			countAna++;
+			count = 0;
+		}
+	}
+	int[] anagramTotal = new int[countAna];
+	int x = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+
+			if (z && count == 0) {
+				anagramTotal[x] = prime[j];
+				x++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			anagramTotal[x] = prime[i];
+			x++;
+			count = 0;
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] > anagramTotal[j + 1]) {
+				int temp = anagramTotal[j];
+				anagramTotal[j] = anagramTotal[j + 1];
+				anagramTotal[j + 1] = temp;
+			}
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] == anagramTotal[j + 1]) {
+				anagramTotal[j + 1] = -1;
+			}
+		}
+	}
+	int positive = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			positive++;
+		}
+	}
+	int[] ana = new int[positive + 1];
+	int zz = 1;
+	int yy = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			ana[yy] = anagramTotal[i];
+			yy++;
+		}
+	}
+	LinkedStack<Integer> listStack = new LinkedStack<Integer>();
+	for (int i = 0; i < ana.length - 1; i++) {
+		listStack.add(ana[i]);
+	}
+	listStack.display();
+}
+
+  /*****Prime Anagram Linked List queue*****/
+
+public static void primeAnagramLinkedListQueue(int[] prime) {
+	boolean z;
+	int count = 0, countAna = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+
+			if (z && count == 0) {
+				countAna++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			countAna++;
+			count = 0;
+		}
+	}
+	int[] anagramTotal = new int[countAna];
+	int x = 0;
+	for (int i = 0; i < prime.length; i++) {
+		for (int j = i + 1; j < prime.length; j++) {
+			z = numberCheck(prime[i], prime[j]);
+			if (z && count == 0) {
+				anagramTotal[x] = prime[j];
+				x++;
+				count++;
+				z = false;
+			}
+
+		}
+		if (count > 0) {
+			anagramTotal[x] = prime[i];
+			x++;
+			count = 0;
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] > anagramTotal[j + 1]) {
+				int temp = anagramTotal[j];
+				anagramTotal[j] = anagramTotal[j + 1];
+				anagramTotal[j + 1] = temp;
+			}
+		}
+	}
+
+	for (int i = 0; i < anagramTotal.length; i++) {
+		for (int j = 0; j < anagramTotal.length - 1; j++) {
+			if (anagramTotal[j] == anagramTotal[j + 1]) {
+				anagramTotal[j + 1] = -1;
+			}
+		}
+	}
+	int positive = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			positive++;
+		}
+	}
+	int[] ana = new int[positive + 1];
+	int zz = 1;
+	int yy = 0;
+	for (int i = 0; i < anagramTotal.length; i++) {
+		if (anagramTotal[i] != -1) {
+			ana[yy] = anagramTotal[i];
+			yy++;
+		}
+	}
+	LinkedQueue<Integer> listQueue = new LinkedQueue<Integer>();
+	for (int i = 0; i < ana.length - 1; i++) {
+		listQueue.add(ana[i]);
+	}
+	listQueue.display();
+}
+
+   /*****Number Check*****/
+ 
+public static boolean numberCheck(int valueOne, int valueTwo) {
+	String a = Integer.toString(valueOne);
+	String b = Integer.toString(valueTwo);
+	char c[] = a.toCharArray();
+	char d[] = b.toCharArray();
+	a = arrange(c);
+	b = arrange(d);
+	return a.equals(b);
+}
+
+	/*****Arrange*****/
+
+public static String arrange(char[] c)
+{
+	String s = "";
+	for (int i = 0; i < c.length; i++) 
+	{
+		for (int j = 0; j < c.length - 1; j++)
+		{
+			if (c[j] > c[j + 1])
+			{
+				char temp = c[j];
+				c[j] = c[j + 1];
+				c[j + 1] = temp;
+			}
+
+		}
+	}
+	for (int i = 0; i < c.length; i++) 
+	{
+		s = s + c[i];
+	}
+	return s;
+ }
+
+
+ }

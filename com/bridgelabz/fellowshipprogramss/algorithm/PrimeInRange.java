@@ -1,3 +1,10 @@
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Prime numbers in the given Range.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.algorithm;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 

@@ -1,3 +1,10 @@
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Sorting an Array using Bubble Sort.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.algorithm;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 

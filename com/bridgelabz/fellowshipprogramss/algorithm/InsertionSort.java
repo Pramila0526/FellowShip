@@ -1,5 +1,11 @@
-package com.bridgelabz.fellowshipprogramss.algorithm;
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Sorting an Array using Insertion Sort.
+ * 
+ */
 
+package com.bridgelabz.fellowshipprogramss.algorithm;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
 public class InsertionSort {

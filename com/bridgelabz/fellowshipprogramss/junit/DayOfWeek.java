@@ -1,5 +1,11 @@
-package com.bridgelabz.fellowshipprogramss.junit;
+/**
+ *  @author: Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Program to get the day of the given date.
+ * 
+ */
 
+package com.bridgelabz.fellowshipprogramss.junit;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
 public class DayOfWeek 

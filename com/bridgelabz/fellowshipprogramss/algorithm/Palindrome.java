@@ -1,3 +1,10 @@
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Check Whether the Given String is Palindrome or not.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.algorithm;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 

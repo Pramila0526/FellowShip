@@ -1,5 +1,11 @@
-package com.bridgelabz.fellowshipprogramss.functional;
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Calculate Eucledian Distance.
+ * 
+ */
 
+package com.bridgelabz.fellowshipprogramss.functional;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
 public class Distance {
@@ -12,7 +18,7 @@ public class Distance {
 		int x2=Utility.IntegerInput();
 		int y2=Utility.IntegerInput();
 		
-		System.out.println(Utility.Distance(x1,y1,x2,y2));
+		System.out.println(Utility.distance(x1,y1,x2,y2));
 		
 	}
 

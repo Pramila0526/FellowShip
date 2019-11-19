@@ -1,3 +1,10 @@
+/**
+ *  @author: Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Vending Machine Program.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.junit;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 

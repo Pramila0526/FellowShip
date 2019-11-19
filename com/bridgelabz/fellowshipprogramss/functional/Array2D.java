@@ -1,3 +1,10 @@
+/**
+ * @author : Pramila0526
+ *  Date   : 9/11/2019
+ *  Purpose: Printing 2D Array.
+ * 
+ */
+
 package com.bridgelabz.fellowshipprogramss.functional;
 import com.bridgelabz.fellowshipprogramss.utility.Utility;
 
@@ -18,6 +25,6 @@ public class Array2D
 		 
 		System.out.println("enter " +row*column+ " Elements to store in an array");
 	     
-		System.out.println(Utility.Array2D(row,column,arr));
+		System.out.println(Utility.array2D(row,column,arr));
 	}
 }
