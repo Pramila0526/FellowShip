@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
+=======
+>>>>>>> 2f817f21ab8583985387147967696c9c82630533
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/home/admin94/Desktop/jackson-all-1.9.0.jar"/>
 	<classpathentry kind="lib" path="/home/admin94/Desktop/jackson-core-asl-1.9.13 (1).jar"/>
 	<classpathentry kind="lib" path="/home/admin94/Desktop/jackson-mapper-asl-1.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="/home/admin94/Desktop/json-simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
+=======
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="output" path=""/>
+>>>>>>> 2f817f21ab8583985387147967696c9c82630533
 </classpath>
